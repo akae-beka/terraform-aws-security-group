@@ -18,7 +18,7 @@ locals {
   }
 }
 
-resource "aws_security_group" "rds" {
+resource "aws_security_group" "main" {
   count = var.create_sg ? 1 : 0
 
   name        = var.name
