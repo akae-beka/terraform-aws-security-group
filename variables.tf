@@ -14,16 +14,16 @@
 
 variable "name" {
   description = "The name of the security group."
-  type = string
-  default = null
+  type        = string
+  default     = null
 }
 
 variable "vpc_id" {
   description = "The VPC ID."
-  type = string
+  type        = string
 }
 
 variable "cidr_blocks" {
   description = "List of CIDR blocks."
-  type = list(string)
+  type        = list(string)
 }
