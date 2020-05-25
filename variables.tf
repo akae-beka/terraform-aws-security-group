@@ -11,3 +11,19 @@
 # OPTIONAL PARAMETERS
 # These parameters have reasonable defaults.
 # ---------------------------------------------------------------------------------------------------------------------
+
+variable "name" {
+  description = "The name of the security group."
+  type = string
+  default = null
+}
+
+variable "vpc_id" {
+  description = "The VPC ID."
+  type = string
+}
+
+variable "cidr_blocks" {
+  description = "List of CIDR blocks."
+  type = list(string)
+}
