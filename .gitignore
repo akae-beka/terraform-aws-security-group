@@ -1,7 +1,8 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Terraform template
 # Local .terraform directories
 **/.terraform/*
+
+# Local .terraform.* files
+*.terraform.*
 
 # .tfstate files
 *.tfstate
@@ -30,11 +31,8 @@ override.tf.json
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
 plan
+*.tfplan
+*.tfplan.*
 
-# PyCharm
+# PyCharm IDE
 .idea/
-
-# Ignore CLI configuration files
-.terraformrc
-terraform.rc
-
